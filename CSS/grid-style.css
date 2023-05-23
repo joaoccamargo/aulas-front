@@ -1,0 +1,12 @@
+.boxes {
+    height: calc(100vh);
+    position: relative;
+    display: grid;
+    gap: 2rem 5rem;
+}
+
+.box{
+    border: 0.5rem solid red;
+    background: blue;
+    color: #fff;
+}
