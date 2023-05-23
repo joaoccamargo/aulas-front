@@ -56,10 +56,77 @@ main {
     order: 3;
 }
 
+[data-anchor="botao"]{
+    display: block;
+    background:blue;
+    color: #fff;
+    border: none;
+    font-size: 5rem;
+    margin: auto;
+    width: 80%;
+    transition: .2s ease-in-out;
+    transition: background-color 1s ease-in-out;
+    animation: pulse 2.5s infinite;
+    animation-direction: alternate;
+    
+    
+}
+
+[data-anchor="botao"]:hover{
+    background:rgb(255, 0, 0);
+    
+    
+   
+}
+
+
+[data-anchor="botaodois"]{
+    margin: 5rem;
+    transform: scale(1);
+    animation: load 1s infinite;
+    
+}
+
+.fa-spinner {
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotateZ(0deg)
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.35);
+        opacity: 1;
+        background-color: green;
+    }
+}
+
+h1{
+    /*display:none;*/
+    /*visibility:hidden;*/
+    /*opacity: 0;*/
+    transform: scale(1.2) rotate(30deg) translateY(10rem);
+}
+
 @media screen and (min-width: 767px){
 
 }
 
 @media print{
-    
+
 }
