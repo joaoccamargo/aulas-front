@@ -55,3 +55,11 @@ main {
 .box:nth-child(7){
     order: 3;
 }
+
+@media screen and (min-width: 767px){
+
+}
+
+@media print{
+    
+}
